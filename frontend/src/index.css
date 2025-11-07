@@ -256,6 +256,15 @@ code {
     }
 }
 
+/* Hide any injected badges or external links */
+#emergent-badge,
+a[href*="emergent"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;
